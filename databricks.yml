@@ -1,0 +1,19 @@
+# This is a Declarative Automation Bundle definition for dab_bakehouse_analytics.
+# The Databricks extension requires databricks.yml configuration file.
+# See https://docs.databricks.com/dev-tools/bundles/index.html for documentation.
+
+bundle:
+  name: dab_bakehouse_analytics
+
+targets:
+  dev:
+    mode: development
+    default: true
+    workspace:
+      host: https://dbc-2b69cffc-7563.cloud.databricks.com
+
+  ## Optionally, there could be 'staging' or 'prod' targets here.
+  #
+  # prod:
+  #   workspace:
+  #     host: https://dbc-2b69cffc-7563.cloud.databricks.com
