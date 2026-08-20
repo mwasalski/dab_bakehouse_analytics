@@ -2,7 +2,7 @@
 # See https://docs.databricks.com/dev-tools/bundles/index.html for documentation.
 bundle:
   name: bakehouse_analytics
-  uuid: fae9e402-f375-4c80-8b55-2fcd5f147cb4
+  uuid: 349a159b-1bd1-4833-99f5-6b7d694b806c
 
 include:
   - resources/*.yml
@@ -26,7 +26,7 @@ targets:
       host: https://dbc-2b69cffc-7563.cloud.databricks.com
     variables:
       catalog: bakehouse_analytics_dev
-      schema: ${workspace.current_user.short_name}
+      schema: dev
   prod:
     mode: production
     workspace:
